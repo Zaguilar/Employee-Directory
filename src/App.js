@@ -100,7 +100,7 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
-        <h1 className="title text-light">💼 Employees</h1>
+        <h1 className="title text-light">Employees</h1>
         <form className=''>
           <div className="row">
             <div className="col-12 col-md-7">
