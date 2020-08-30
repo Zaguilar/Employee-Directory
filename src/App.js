@@ -9,9 +9,9 @@ class App extends React.Component {
   state = {
     employees,
     searchTerm: '',
-    searchSetting: 'searchBy', //this doesn't actually let us search by anything just shows placeholder
-    sortSetting: 'sortBy', //this doesn't actually let us sort by anything just shows placeholder
-    sortOrder: 'asc', //we sort ascending by default
+    searchSetting: 'searchBy', 
+    sortSetting: 'sortBy', 
+    sortOrder: 'asc', 
   };
 
   handleChange = event => {
@@ -21,8 +21,6 @@ class App extends React.Component {
     this.setState({
       [name]: value
     });
-
-    //this should also call 
     this.renderEmployees();
   };
 
@@ -47,11 +45,11 @@ class App extends React.Component {
       let propA;
       let propB;
 
-      //if no sortSetting is specified, we'll sort by id
+      //default to sort with id//
       if (this.state.sortSetting === 'sortBy') {
         propA = a.id;
         propB = b.id;
-        //if sortsetting is a str, lets do the value to lowercase
+        //convert string to lowercase
       } else {
         propA = a[sortSetting].toLowerCase();
         propB = b[sortSetting].toLowerCase();
@@ -82,11 +80,9 @@ class App extends React.Component {
   renderEmployees = () => {
     //sort employees
     this.sortEmployees();
-    //IF employee[this.state.searchSetting] -> return employees where employee[this.state.searchSetting] includes this.state.searchTerm
-    //ELSE return employees where any attr includes this.state.searchTerm
+
     return this.state.employees.map((employee) => {
 
-      /* I WANT TO REVISIT THIS AND MAKE IT CLEANER */
       if (employee[this.state.searchSetting]) {
         if (this.state.searchTerm === '' || employee[this.state.searchSetting].toLowerCase().includes(this.state.searchTerm.toLowerCase())) {
           return this.returnEmployeeCard(employee);
@@ -100,7 +96,7 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
-        <h1 className="title text-light">Employees</h1>
+        <h1 className="title text-primary">Employees</h1>
         <form className=''>
           <div className="row">
             <div className="col-12 col-md-7">
@@ -132,9 +128,9 @@ class App extends React.Component {
                 </select>
                 {/* sort by ascending or descending */}
                 <div className="input-group-append">
-                  <label className={`form-control btn ${this.state.sortOrder === 'asc' ? 'btn-warning' : 'btn-outline-warning'}`}>
+                  <label className={`form-control btn ${this.state.sortOrder === 'asc' ? 'btn-primary' : 'btn-outline-light'}`}>
                     <input type="radio" name="sortOrder" id="asc" value='asc' checked={this.state.sortOrder === 'asc'} onChange={this.handleChange} /> Asc</label>
-                  <label className={`form-control btn ${this.state.sortOrder === 'desc' ? 'btn-warning' : 'btn-outline-warning'}`}>
+                  <label className={`form-control btn ${this.state.sortOrder === 'desc' ? 'btn-primary' : 'btn-outline-light'}`}>
                     <input type="radio" name="sortOrder" id="desc" value='desc' checked={this.state.sortOrder === 'desc'} onChange={this.handleChange} /> Desc</label>
 
                 </div>
