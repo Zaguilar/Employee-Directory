@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "firstName": "John-117",
+      "lastName": "REDACTED",
+      "department": "UNSC",
+      "role": "Spartan II",
+      "location": "Zeta Halo",
+      "imgUrl": "https://66.media.tumblr.com/cbd3291f72abb157522952b1cef90239/tumblr_pn1zs1eRGa1twwtodo1_250.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Thel ",
+      "lastName": "'Vadam'",
+      "department": "Sangheili State",
+      "role": "Kaidon",
+      "location": "Sangheilios",
+      "imgUrl": "https://pbs.twimg.com/media/Cq_E35QXEAAmf1T.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Jameson",
+      "lastName": "Locke",
+      "department": "ONI",
+      "role": "Spartan IV",
+      "location": "Classified",
+      "imgUrl": "https://66.media.tumblr.com/77df4d2ff60ee47ade9f1211a5796f6a/tumblr_pqmhqjad621wzzbau_1280.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Edward",
+      "lastName": "Buck",
+      "department": "ONI",
+      "role": "Spartan IV",
+      "location": "Classified",
+      "imgUrl": "https://66.media.tumblr.com/3cf0cde3d339719dc22aa156aae78aa2/440203afb3801f74-4a/s500x750/d0ede6d1913dd113a4b5c0d05978f497f1352cf1.png"
+    },
+    {
+      "id": 5,
+      "firstName": "N'tho",
+      "lastName": "'Sraom",
+      "department": "Swords of Sanghelios",
+      "role": "Commander",
+      "location": "Sanghelios",
+      "imgUrl": ""
+    },
+    {
+      "id": 6,
+      "firstName": "Yap Yap",
+      "lastName": "The Destroyer",
+      "department": "Yap Yap's Rebellion",
+      "role": "Rebel Leader",
+      "location": "Installation 00",
+      "imgUrl": "https://content.halocdn.com/media/Default/community/blogs/yapyap_render_wbackground-90dac6a643fc440b8c499493acfa5c35.png"
+    }
+]
