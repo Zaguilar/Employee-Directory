@@ -1,7 +1,7 @@
 import React from 'react';
 import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
-// import Searchbar from "./components/Searchbar";
+
 import employees from './employees.json';
 import './App.css';
 
